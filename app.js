@@ -62,7 +62,7 @@ const renderUserRepositories = async (userName) => {
 
 let main = document.querySelector('.main')
 const userNotFound = () => {
-	main.innerHTML=`user not found`
+	main.innerHTML=`<div class="text-center text-[#fff] text-xl">user not found</div>`
 };
 
 let searchButton = document.querySelector('.searchButton')
