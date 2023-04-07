@@ -16,34 +16,38 @@
     </style>
 </head>
 <body>
-    <div class="w-full min-h-screen bg-dark">
-        <div class="navbar w-[90%] mx-auto flex justify-between items-center px-5 py-5 border-b-2">
+    <div class="w-full md:min-h-screen bg-dark">
+        <div class="navbar md:w-[90%] mx-auto flex justify-between items-center px-5 py-5 border-b-2">
             <div class="logo flex gap-2 w-[30vw] items-center justify-center">
-                <img src="./assets/GitHub.svg" alt="" srcset="">
-                <h5 class="text-[#fff]">GitHub-Profile Finder</h5>
+                <img src="./assets/GitHub.svg" alt="" class="rounded-md">
+                <h5 class="text-[#fff] text-sm md:text-xl">GitHub-Profile Finder</h5>
             </div>
             <div class="searchBar">
-                <input type="search" class="rounded-md p-2 min-w-[20vw]" placeholder="search by username">
-                <button class="bg-green text-[#fff] p-2 rounded-md">search</button>
+                <input type="search" class="search rounded-md p-2 min-w-[20vw]" placeholder="search by username">
+                <button class="searchButton bg-green text-[#fff] p-2 rounded-md">search</button>
             </div>
         </div>
-        <div class="main p-[1rem] grid grid-cols-2">
-            <div class="card bg-light rounded-md">
-                <div class="proflie_pic"></div>
+        <div class="main grid md:grid-cols-6 w-full h-screen p-[2rem] grid-cols-1 grid-rows-2 md:grid-rows-1 gap-[30rem] md:gap-[0]">
+            <div class="card rounded-md text-[#fff] md:col-start-1 md:col-end-3 flex gap-1 flex-col items-center items-end row-start-1 row-end-2">
+                <div class="proflie_pic">
+                    <img src="" class="profile_img max-w-[320px]" alt="" srcset="">
+                </div>
                 <div class="Username"></div>
-                <div class="info">
-                    <div class="repos"></div>
-                    <div class="followers"></div>
-                    <div class="following"></div>
+                <div class="login"></div>
+                <div class="bio"></div>
+                <div class="info flex p-5 gap-2">
+                    <div class="repos p-2 bg-light rounded-md"></div>
+                    <div class="followers p-2 bg-light rounded-md"></div>
+                    <div class="following p-2 bg-light rounded-md"></div>
                 </div>
             </div>
-            <div class="repositorys">
-                <div class="repo_name"></div>
-                <div class="repo_link"></div>
-                <div class="repo_description"></div>
-                <div class="last_updated"></div>
+            <div class="md:col-start-3 md:col-end-7 text-[#fff] felx gap-y-[1rem] flex-cols md:overflow-y-scroll row-start-2 row-end-3">
+                <h5 class="heading"></h5>
+                <div class="repositorys">
+                </div>
             </div>
         </div>
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>

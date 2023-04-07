@@ -10,6 +10,7 @@ tailwind.config = {
         colors: {
           background: "#06090F",
           dark: "#161B22",
+          light:"#515152",
           green: "#2EA043"
         },
         fontFamily: {
